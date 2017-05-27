@@ -3,7 +3,7 @@
 #include "InputHandler.hpp"
 #include "TextureManager.hpp"
 #include "Game.hpp"
-#include "SDLHeader.hpp"
+#include "SDL.h"
 
 Target::Target( ObjectData objectData ) : Sprite( objectData ) {
   

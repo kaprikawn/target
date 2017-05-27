@@ -3,7 +3,7 @@
 
 #include <unordered_map>
 #include <vector>
-#include "SDLHeader.hpp"
+#include "SDL.h"
 #include "Structs.hpp"
 
 class Animation {

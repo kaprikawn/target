@@ -4,7 +4,7 @@
 #include "InputHandler.hpp"
 #include "TextureManager.hpp"
 #include "Game.hpp"
-#include "SDLHeader.hpp"
+#include "SDL.h"
 //#include "json.hpp"
 //#include "JsonLoader.hpp"
 

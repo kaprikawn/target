@@ -3,7 +3,7 @@
 #include "InputHandler.hpp"
 #include "TextureManager.hpp"
 #include "Game.hpp"
-#include "SDLHeader.hpp"
+#include "SDL.h"
 
 Scenary::Scenary( ObjectData objectData ) : Sprite( objectData ) {
   

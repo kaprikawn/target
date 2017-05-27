@@ -2,7 +2,8 @@
 #define TEXTUREMANAGER_HPP
 
 #include <map>
-#include "SDLHeader.hpp"
+#include "SDL.h"
+#include "SDL_image.h"
 
 class TextureManager {
   private:

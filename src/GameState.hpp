@@ -3,7 +3,7 @@
 
 #include <string>
 //#include <memory>
-#include "SDLHeader.hpp"
+#include "SDL.h"
 #include "Sprite.hpp"
 
 class GameState {

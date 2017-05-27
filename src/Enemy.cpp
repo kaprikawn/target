@@ -1,7 +1,7 @@
 #include <iostream>
+#include "SDL.h"
 #include "Enemy.hpp"
 #include "Game.hpp"
-#include "SDLHeader.hpp"
 
 Enemy::Enemy( ObjectData objectData ) : Sprite( objectData ), destination_( 0, 0 ) {
   

@@ -3,7 +3,7 @@
 //#include "InputHandler.hpp"
 #include "TextureManager.hpp"
 #include "Game.hpp"
-#include "SDLHeader.hpp"
+#include "SDL.h"
 #include "Vector2D.hpp"
 
 Projectile::Projectile( ObjectData objectData, int playerX, std::string type ) : Sprite( objectData ) {

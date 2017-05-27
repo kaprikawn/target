@@ -2,7 +2,7 @@
 #define INPUTHANDLER_HPP
 
 #include <vector>
-#include "SDLHeader.hpp"
+#include "SDL.h"
 
 
 

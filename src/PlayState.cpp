@@ -33,12 +33,15 @@ void PlayState::add( Sprite* sprite ) {
 bool PlayState::onEnter() {
 
   JsonLoader testJsonLoader;
-  std::vector<ObjectData> objectData = testJsonLoader.getObjectData( "assets/dataTest.json" );
+  printf( "loading main json\n" );
+  std::vector<ObjectData> objectData = testJsonLoader.getObjectData( "assets/dataMain.json" );
   for( int i = 0; i < objectData.size(); i++ ) {
     if( objectData[i].objectType == "Player" ) {
+      printf( "loading player\n" );
       player = new Player( objectData[i] );
       PlayState::add( player );
     } else if( objectData[i].objectType == "Target" ) {
+      printf( "loading target\n" );
       target = new Target( objectData[i] );
       PlayState::add( target );
     }

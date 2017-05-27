@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <map>
-#include "SDLHeader.hpp"
+#include "SDL.h"
 #include "GameState.hpp"
 #include "Sprite.hpp"
 #include "Player.hpp"

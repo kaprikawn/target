@@ -5,10 +5,10 @@ void Animation::changeState( int newSpriteState ) {
   m_animationData.clear();
   msSinceChangedAnim_ = 0;
   
-  for( int i = 0; i < m_stateData.size(); i++ ) {
+  for( unsigned int i = 0; i < m_stateData.size(); i++ ) {
     if( m_stateData[i].spriteState == newSpriteState ) {
       m_fixedAnimation = m_stateData[i].fixedAnim;
-      for( int a = 0; a < m_stateData[i].animData.size(); a++ ) {
+      for( unsigned int a = 0; a < m_stateData[i].animData.size(); a++ ) {
         m_animationData.push_back( m_stateData[i].animData[a] );
       }
       m_lastSpriteState = newSpriteState;

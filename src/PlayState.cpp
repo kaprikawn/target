@@ -33,15 +33,12 @@ void PlayState::add( Sprite* sprite ) {
 bool PlayState::onEnter() {
 
   JsonLoader testJsonLoader;
-  printf( "loading main json\n" );
   std::vector<ObjectData> objectData = testJsonLoader.getObjectData( "assets/dataMain.json" );
-  for( int i = 0; i < objectData.size(); i++ ) {
+  for( unsigned int i = 0; i < objectData.size(); i++ ) {
     if( objectData[i].objectType == "Player" ) {
-      printf( "loading player\n" );
       player = new Player( objectData[i] );
       PlayState::add( player );
     } else if( objectData[i].objectType == "Target" ) {
-      printf( "loading target\n" );
       target = new Target( objectData[i] );
       PlayState::add( target );
     }
@@ -68,7 +65,7 @@ bool PlayState::loadLevelFromFile( int currentLevel ) {
   
   JsonLoader newJsonLoader;
   std::vector<ObjectData> objectData = newJsonLoader.getObjectData( "assets/dataLevel1.json" );
-  for( int i = 0; i < objectData.size(); i++ ) {
+  for( unsigned int i = 0; i < objectData.size(); i++ ) {
     if( objectData[i].objectType == "Scenary" ) {
       Scenary* newScenary = new Scenary( objectData[i] );
       PlayState::add( newScenary );
@@ -83,7 +80,7 @@ bool PlayState::loadLevelFromFile( int currentLevel ) {
     
     textureLoaded = false;
     if( !loadedTextures.empty() ) {
-      for( int t = 0; t < loadedTextures.size(); t++ ) {
+      for( unsigned int t = 0; t < loadedTextures.size(); t++ ) {
         if( loadedTextures[t] == objectData[i].textureID ) {
           textureLoaded = true;
         }
@@ -132,7 +129,7 @@ void PlayState::update() {
   spriteHit = nullptr;
   
   if( !collisions_.empty() ) {
-    for( int c = 0; c < collisions_.size(); c++ ) {
+    for( unsigned int c = 0; c < collisions_.size(); c++ ) {
       //std::cout << collisions_[c].first -> getSpriteID() << " has collided with " << collisions_[c].second -> getSpriteID() << std::endl;
       
       int id1 = collisions_[c].first  -> getSpriteID();

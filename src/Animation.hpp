@@ -26,7 +26,7 @@ class Animation {
     int     msSinceChangedFrame_  = 0;
     
     int     m_returnFrame         = 0;
-    int     m_currentIndex        = -1;
+    unsigned int m_currentIndex   = -1;
     bool    m_changeFrame         = false;
     
   public:

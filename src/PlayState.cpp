@@ -48,7 +48,7 @@ bool PlayState::onEnter() {
     TheTextureManager::Instance() -> load( objectData[i].filename, objectData[i].textureID, TheGame::Instance() -> getRenderer() );
   }
   
-  TheTextureManager::Instance() -> load( "assets/grass.png", "background", TheGame::Instance() -> getRenderer() );
+  TheTextureManager::Instance() -> load( "assets/level1Background.png", "background", TheGame::Instance() -> getRenderer() );
   
   PlayState::loadLevelFromFile( 1 );
   

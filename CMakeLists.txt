@@ -11,3 +11,7 @@ include_directories(${SDL2_INCLUDE_DIR})
 include_directories(include)
 
 ADD_SUBDIRECTORY( src )
+
+if ( CMAKE_COMPILER_IS_GNUCC )
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall")
+endif ( CMAKE_COMPILER_IS_GNUCC )

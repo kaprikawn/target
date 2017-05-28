@@ -6,16 +6,12 @@
 class Projectile : public Sprite {
   
   private:
-    //bool isAtDestination      = false;
-    //bool m_deleteAtDestination  = false;
-    
-    //Vector2D m_destination;
-    
+    int projectileType_ = 0;
     
   public:
     
     //Projectile( int x, int y, int destinationX, int destinationY, int speed, bool deleteAtDestination, bool isHostile, bool isPlayerGenerated );
-    Projectile( ObjectData objectData, int playerX, std::string type );
+    Projectile( ObjectData objectData, int playerX, int type );
     virtual ~Projectile(){}
     
     virtual void update ();

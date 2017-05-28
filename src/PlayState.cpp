@@ -197,7 +197,7 @@ void PlayState::update() {
         
         projectileData.stateData.push_back( newStateData );
         
-        Projectile* newProjectile = new Projectile( projectileData, sprites_[0] -> getPosition(). getSpriteCenter().getX(), "grenade" );
+        Projectile* newProjectile = new Projectile( projectileData, sprites_[0] -> getPosition(). getSpriteCenter().getX(), GRENADE );
         PlayState::add( newProjectile );
         
         sprites_[i] -> setSpawnProjectile( false );

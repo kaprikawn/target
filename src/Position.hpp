@@ -8,6 +8,7 @@ class Position {
 
   private:
     Vector2D  m_position;
+    
     Vector2D  m_hitbox;
     Hitbox    hitbox_;
     Vector2D  spriteCenter_;

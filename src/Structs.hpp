@@ -110,4 +110,8 @@ enum spriteStates {
   , DODGE3    = 14
 };
 
+enum ProjectileTypes {
+    BULLET, GRENADE
+};
+
 #endif //STRUCTS_HPP

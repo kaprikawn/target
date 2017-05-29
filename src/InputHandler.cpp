@@ -86,7 +86,7 @@ bool InputHandler::isPressed( int button ) {
       return true;
     }
   } else if( button == 6 ) { // bomb
-    if( m_keystates[ SDL_SCANCODE_B ] == 1 ) {
+    if( m_keystates[ SDL_SCANCODE_C ] == 1 ) {
       return true;
     }
   } else if( button == 7 ) { // start

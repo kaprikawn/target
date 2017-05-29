@@ -26,6 +26,10 @@ void Player::handleInput() {
     m_isFiring = false;
   }
   
+  if( TheInputHandler::Instance() -> isPressed( BOMB ) ) {
+    //printf( "bomb detected\n" );
+    throwBomb_ = true;
+  }
   if( TheInputHandler::Instance() -> isPressed( ROLL ) ) {
     if( m_spriteState == DEFAULT || m_spriteState == MOVING || m_spriteState == FIRING ) {
       m_spriteState = DODGING;

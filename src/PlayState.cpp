@@ -204,6 +204,11 @@ void PlayState::update() {
       }
     }
   }
+
+  if( player -> throwingBomb() ) {
+    printf( "player throwing bomb\n" );
+    player -> setThrowBomb( false );
+  }
   
   return;
   /*

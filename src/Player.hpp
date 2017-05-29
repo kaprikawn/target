@@ -13,7 +13,9 @@ class Player : public Sprite {
     int   m_frameNumber   = 0;
     
     void  handleInput();
-    
+    bool  throwBomb_ = false;
+    Uint32  msSinceLastBomb_ = 0;
+   
     
     
   public:
@@ -25,6 +27,13 @@ class Player : public Sprite {
     virtual void render ();
     virtual void clean  ();
     
+    bool throwingBomb() {
+      return throwBomb_;
+    }
+
+    void setThrowBomb( bool throwBomb ) {
+      throwBomb_ = throwBomb;
+    }
     
 };
 

@@ -119,7 +119,7 @@
       , "height"            : 300
       , "width"             : 456
       , "textureID"         : "defense"
-      , "filename"          : "assets/defenseTest.png"
+      , "filename"          : "assets/wall.png"
       , "x"                 : 100
       , "y"                 : 350
       , "hb_left_adjust"    : 0

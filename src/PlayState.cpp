@@ -146,6 +146,11 @@ void PlayState::update() {
           }
         }
       }
+      if( id1 == 0 && id2 > 1 ) { // enemy hitting player
+        if( sprites_[id2] -> isHostile() ) {
+          printf( "player has been hit\n" );
+	}
+      }
     }
   }
   

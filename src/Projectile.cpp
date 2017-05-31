@@ -30,13 +30,14 @@ void Projectile::update() {
     m_velocity = m_velocity + Vector2D( 0, 10 );
   }
 
-  Sprite::update();
-  
-  if( projectileType_ == GRENADE && m_position.getY() >= 700 ) {
-    printf( "grenade has hit the ground\n" );
+  if( projectileType_ == GRENADE && m_position.getY() >= 660 ) {
     m_velocity.setX( 0 );
     m_velocity.setY( 0 );
+    isHostile_ = true;
   }
+
+  Sprite::update();
+  
 }
 
 void Projectile::render() {

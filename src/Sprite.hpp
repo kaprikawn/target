@@ -48,7 +48,7 @@ class Sprite {
     bool        m_isFiring          = false;
     bool        m_outOfBounds       = false;
     bool        m_delete            = false;
-    bool        m_hostile           = false;
+    bool        isHostile_          = false;
     bool        hasSpawned_         = false;
     
   public:
@@ -75,7 +75,7 @@ class Sprite {
     bool  hasSpawned()      { return hasSpawned_; }
     bool  hasAppeared()     { return m_hasAppeared; }
     bool  isDying()         { return m_isDying; }
-    bool  isHostile()       { return m_hostile; }
+    bool  isHostile()       { return isHostile_; }
     bool  needsDeleting()   { return m_delete; }
     int   getDrawIndex()    { return m_drawIndex; }
     int   getBottomY()      { return m_bottomY; }

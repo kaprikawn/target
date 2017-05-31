@@ -31,6 +31,12 @@ void Projectile::update() {
   }
 
   Sprite::update();
+  
+  if( projectileType_ == GRENADE && m_position.getY() >= 700 ) {
+    printf( "grenade has hit the ground\n" );
+    v_velocity.setX( 0 );
+    v_velocity.setY( 0 );
+  }
 }
 
 void Projectile::render() {
